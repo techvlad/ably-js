@@ -117,7 +117,7 @@ module.exports = function (grunt) {
       sourcemap: true,
       format: 'umd',
       banner: { js: '/*' + banner + '*/' },
-      plugins: [umdWrapper.default()],
+      plugins: [umdWrapper.default({ libraryName: 'Ably' })],
       target: 'es6',
     };
 
